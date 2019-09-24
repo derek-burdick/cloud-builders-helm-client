@@ -1,6 +1,13 @@
 steps:
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '--tag=gcr.io/$PROJECT_ID/helm-client', '--build-arg', 'HELM_VERSION=v2.14.3', '.']
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "build",
+        "--tag=gcr.io/$PROJECT_ID/helm-client",
+        "--build-arg",
+        "HELM_VERSION=v2.14.3",
+        ".",
+      ]
 
-images: ['gcr.io/$PROJECT_ID/helm-client']
-tags: ['cloud-builders-community']
+images: ["gcr.io/$PROJECT_ID/helm-client"]
+tags: ["cloud-builders-community", "helm", "helm client", "helm package"]
