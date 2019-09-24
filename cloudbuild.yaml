@@ -10,4 +10,4 @@ steps:
       ]
 
 images: ["gcr.io/$PROJECT_ID/helm-client"]
-tags: ["cloud-builders-community", "helm", "helm client", "helm package"]
+tags: ["cloud-builders-community", "helm", "helm-client", "helm-package"]
